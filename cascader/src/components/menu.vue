@@ -5,7 +5,6 @@
           {{item.label}}
         </li>
       </ul>
-      <!-- v-if一定要加上，不然会造成内存泄露 -->
       <dc-menu :node="nodeleaf" v-if="nodeleaf.length!==0" :level="newlevel" :unique="unique" :style="{left:offsetLeft+'px'}"></dc-menu>
   </div>
 </template>
